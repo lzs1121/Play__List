@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<div id="musicApp">
+    <header>
+        <h2 class="title">播放列表</h2>
+        <input type="text" placeholder="输入歌曲名字">
+        <input type="text" placeholder="输入歌手名字">
+        <input type="button" value="添加音乐">
+    </header>
+    <table class="main">
+        <thead>
+            <th>
+                <input type="checkbox" id="checkAll">
+                <label for="checkAll">全选</label>
+            </th>
+            <th>歌曲</th>
+            <th>歌手</th>
+            <th>收藏</th>
+            <th>删除</th>
+        </thead>
+        <tbody>
+            <tr class="like">
+                <td>
+                    <input type="checkbox" name="">
+                </td>
+                <td>空白格</td>
+                <td>蔡健雅</td>
+                <td>
+                    <input type="checkbox" checked name="">
+                </td>
+                <td>
+                    <a href="javascript:;">X</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="">
+                </td>
+                <td>全世界失眠</td>
+                <td>陈奕迅</td>
+                <td>
+                    <input type="checkbox" name="">
+                </td>
+                <td>
+                    <a href="javascript:;">X</a>
+                </td>
+            </tr>
+            <tr class="selected">
+                <td>
+                    <input type="checkbox" checked name="">
+                </td>
+                <td>全世界失眠</td>
+                <td>陈奕迅</td>
+                <td>
+                    <input type="checkbox" name="">
+                </td>
+                <td>
+                    <a href="javascript:;">X</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <footer>
+        <div class="info">
+            <span class="align-right">当前选中1首歌曲</span>
+            <span>共3首歌曲</span>
+        </div>
+        <input type="button" value="删除选中歌曲">
+        <input type="button" value="收藏选中歌曲">
+        <input type="button" value="取消收藏选中歌曲">
+        <input type="button" value="查看收藏清单" >
+        <input type="button" value="查看所有清单" >
+    </footer>
+</div>
+</body>
+</html>
